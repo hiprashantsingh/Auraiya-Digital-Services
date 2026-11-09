@@ -1,0 +1,1575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">   
+
+  </head>
+<body>
+    <!-- Auraiya Digital Services — Section 01: Header / Navigation -->
+<header class="site-header" id="siteHeader">
+  <div class="site-header__inner">
+
+    <a class="site-header__brand" href="/" aria-label="Auraiya Digital Services, home">
+      <span class="site-header__mark" aria-hidden="true">A</span>
+      <span class="site-header__wordmark">
+        <span class="site-header__name">Auraiya</span>
+        <span class="site-header__tagline">Digital Services</span>
+      </span>
+    </a>
+
+    <button class="site-header__toggle" type="button"
+            aria-expanded="false" aria-controls="siteNav" aria-label="Menu">
+      <span class="site-header__bars" aria-hidden="true"></span>
+    </button>
+
+    <nav class="site-nav" id="siteNav" aria-label="Main">
+      <ul class="site-nav__list">
+        <li class="site-nav__item">
+          <a class="site-nav__link" href="/" aria-current="page">Home</a>
+        </li>
+
+        <li class="site-nav__item site-nav__item--has-menu">
+          <button class="site-nav__link site-nav__trigger" type="button"
+                  aria-expanded="false" aria-controls="menuServices">
+            Services
+            <svg class="site-nav__chevron" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="site-nav__menu" id="menuServices">
+            <li><a href="/services">All services</a></li>
+            <li><a href="/services/business-websites">Business websites</a></li>
+            <li><a href="/services/local-seo">Local SEO</a></li>
+            <li><a href="/services/google-business-profile">Google Business Profile</a></li>
+            <li><a href="/services/social-media-setup">Social media setup</a></li>
+          </ul>
+        </li>
+
+        <li class="site-nav__item site-nav__item--has-menu">
+          <button class="site-nav__link site-nav__trigger" type="button"
+                  aria-expanded="false" aria-controls="menuJanSeva">
+            Jan Seva Kendra
+            <svg class="site-nav__chevron" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="site-nav__menu" id="menuJanSeva">
+            <li><a href="/jan-seva-kendra">About Jan Seva Kendra</a></li>
+            <li><a href="/jan-seva-kendra/aadhaar-pan">Aadhaar &amp; PAN services</a></li>
+            <li><a href="/jan-seva-kendra/certificates">Certificates &amp; documents</a></li>
+            <li><a href="/jan-seva-kendra/online-forms">Online form filling</a></li>
+            <li><a href="/jan-seva-kendra/bill-payments">Bill payments &amp; recharge</a></li>
+          </ul>
+        </li>
+
+        <li class="site-nav__item"><a class="site-nav__link" href="/website-design">Website Design</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="/website-demos">Website Demos</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="/portfolio">Portfolio</a></li>
+        <li class="site-nav__item"><a class="site-nav__link" href="/contact">Contact</a></li>
+      </ul>
+
+      <!-- CTA shown inside the mobile menu only -->
+      <a class="site-cta site-cta--panel" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.45 15.05L2 22l5.1-1.34A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.03.8.81-2.95-.2-.31a8.2 8.2 0 1 1 6.9 3.78Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.13-.16.25-.64.8-.78.97-.14.16-.29.18-.54.06a6.7 6.7 0 0 1-3.3-2.88c-.25-.43.25-.4.72-1.33.08-.16.04-.3-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.57c.12.16 1.75 2.67 4.24 3.75 1.58.68 2.2.74 2.99.62.48-.07 1.46-.6 1.67-1.17.2-.58.2-1.07.14-1.17-.06-.1-.23-.16-.48-.29Z"/></svg>
+        Chat on WhatsApp
+      </a>
+    </nav>
+
+    <!-- CTA shown in the header on desktop only -->
+    <a class="site-cta site-cta--header" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12.04 2a9.9 9.9 0 0 0-8.45 15.05L2 22l5.1-1.34A9.9 9.9 0 1 0 12.04 2Zm0 18.1a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.03.8.81-2.95-.2-.31a8.2 8.2 0 1 1 6.9 3.78Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.56.13-.16.25-.64.8-.78.97-.14.16-.29.18-.54.06a6.7 6.7 0 0 1-3.3-2.88c-.25-.43.25-.4.72-1.33.08-.16.04-.3-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.4-.42-.56-.43h-.48c-.16 0-.43.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.57c.12.16 1.75 2.67 4.24 3.75 1.58.68 2.2.74 2.99.62.48-.07 1.46-.6 1.67-1.17.2-.58.2-1.07.14-1.17-.06-.1-.23-.16-.48-.29Z"/></svg>
+      Chat on WhatsApp
+    </a>
+
+  </div>
+</header> 
+
+<!-- Auraiya Digital Services — Section 02: Hero -->
+<section class="hero" id="hero" aria-labelledby="heroTitle">
+  <div class="hero__inner">
+
+    <div class="hero__content">
+      <p class="hero__eyebrow">Local Digital Services • Auraiya, Uttar Pradesh</p>
+
+      <h1 class="hero__title" id="heroTitle">
+        आपके काम का डिजिटल समाधान।
+        <span class="hero__title-line">एक ही जगह।</span>
+      </h1>
+
+      <p class="hero__text">
+        सरकारी ऑनलाइन सेवाओं से लेकर बिजनेस वेबसाइट, ग्राफिक डिजाइन और डिजिटल पहचान तक — आपकी जरूरत के अनुसार डिजिटल सेवाएं।
+      </p>
+
+      <div class="hero__actions">
+        <a class="hero__btn hero__btn--primary" href="#services">अपनी सेवा चुनें</a>
+        <a class="hero__btn hero__btn--ghost" href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">WhatsApp पर संपर्क करें</a>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <svg class="hero__art" viewBox="0 0 560 480" role="img" aria-labelledby="heroArtTitle heroArtDesc" xmlns="http://www.w3.org/2000/svg">
+        <title id="heroArtTitle">Auraiya Digital Services का डिजिटल ग्राफिक</title>
+        <desc id="heroArtDesc">एक वेबसाइट विंडो, सरकारी सेवा का दस्तावेज़ कार्ड, डिजाइन कार्ड और WhatsApp चैट बबल, जो एक ही जगह की डिजिटल सेवाओं को दर्शाते हैं।</desc>
+
+        <defs>
+          <radialGradient id="hero-glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#176BFF" stop-opacity=".38"/>
+            <stop offset=".55" stop-color="#176BFF" stop-opacity=".1"/>
+            <stop offset="1" stop-color="#176BFF" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="hero-blue" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#3B86FF"/>
+            <stop offset="1" stop-color="#176BFF"/>
+          </linearGradient>
+          <linearGradient id="hero-card" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#162030"/>
+            <stop offset="1" stop-color="#101822"/>
+          </linearGradient>
+        </defs>
+
+        <!-- Soft blue glow -->
+        <ellipse class="art-glow" cx="285" cy="250" rx="270" ry="230" fill="url(#hero-glow)"/>
+
+        <!-- Orbits -->
+        <circle cx="285" cy="250" r="150" fill="none" stroke="#fff" stroke-opacity=".07"/>
+        <g class="art-orbit">
+          <circle cx="285" cy="250" r="215" fill="none" stroke="#fff" stroke-opacity=".14" stroke-dasharray="3 9" stroke-linecap="round"/>
+          <circle cx="500" cy="250" r="6" fill="#FF3D9A"/>
+        </g>
+
+        <!-- Connectors -->
+        <path d="M232 372 C300 372 340 384 392 384" fill="none" stroke="#176BFF" stroke-opacity=".6" stroke-dasharray="4 6" stroke-linecap="round"/>
+        <path d="M450 176 C450 214 436 226 420 240" fill="none" stroke="#FF3D9A" stroke-opacity=".6" stroke-dasharray="4 6" stroke-linecap="round"/>
+
+        <!-- Website window -->
+        <g class="art-float art-float--a">
+          <rect x="150" y="140" width="270" height="200" rx="20" fill="url(#hero-card)" stroke="#fff" stroke-opacity=".12"/>
+          <circle cx="176" cy="166" r="4" fill="#FF3D9A"/>
+          <circle cx="192" cy="166" r="4" fill="#fff" fill-opacity=".25"/>
+          <circle cx="208" cy="166" r="4" fill="#fff" fill-opacity=".25"/>
+          <path d="M150 184 H420" stroke="#fff" stroke-opacity=".08"/>
+          <rect x="172" y="200" width="120" height="76" rx="10" fill="url(#hero-blue)"/>
+          <rect x="304" y="204" width="96" height="8" rx="4" fill="#fff" fill-opacity=".55"/>
+          <rect x="304" y="222" width="72" height="8" rx="4" fill="#fff" fill-opacity=".22"/>
+          <rect x="304" y="240" width="84" height="8" rx="4" fill="#fff" fill-opacity=".22"/>
+          <rect x="304" y="258" width="62" height="20" rx="10" fill="#FF3D9A"/>
+          <rect x="172" y="296" width="210" height="8" rx="4" fill="#fff" fill-opacity=".14"/>
+          <rect x="172" y="314" width="140" height="8" rx="4" fill="#fff" fill-opacity=".14"/>
+        </g>
+
+        <!-- Government service / document card -->
+        <g class="art-float art-float--b">
+          <rect x="56" y="316" width="176" height="112" rx="16" fill="url(#hero-card)" stroke="#fff" stroke-opacity=".12"/>
+          <circle cx="92" cy="352" r="16" fill="#FF3D9A"/>
+          <path d="M84 352 l6 6 l11 -12" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="120" y="342" width="84" height="8" rx="4" fill="#fff" fill-opacity=".55"/>
+          <rect x="120" y="358" width="56" height="8" rx="4" fill="#fff" fill-opacity=".22"/>
+          <rect x="76" y="392" width="136" height="8" rx="4" fill="#fff" fill-opacity=".1"/>
+          <rect x="76" y="392" width="92" height="8" rx="4" fill="#176BFF"/>
+        </g>
+
+        <!-- Design card -->
+        <g class="art-float art-float--c">
+          <rect x="386" y="64" width="128" height="112" rx="16" fill="url(#hero-card)" stroke="#fff" stroke-opacity=".12"/>
+          <circle cx="440" cy="110" r="22" fill="#176BFF" fill-opacity=".9"/>
+          <circle cx="464" cy="110" r="22" fill="#FF3D9A" fill-opacity=".8"/>
+          <path d="M406 152 C424 134 446 162 494 144" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="1.5"/>
+          <rect x="402" y="148" width="8" height="8" rx="2" fill="#fff"/>
+          <rect x="490" y="140" width="8" height="8" rx="2" fill="#fff"/>
+        </g>
+
+        <!-- WhatsApp-style chat bubble -->
+        <g class="art-float art-float--d">
+          <rect x="392" y="356" width="112" height="56" rx="18" fill="url(#hero-blue)"/>
+          <path d="M414 410 l-6 14 l22 -14z" fill="#176BFF"/>
+          <circle cx="426" cy="384" r="5" fill="#fff"/>
+          <circle cx="448" cy="384" r="5" fill="#fff" fill-opacity=".75"/>
+          <circle cx="470" cy="384" r="5" fill="#fff" fill-opacity=".5"/>
+        </g>
+      </svg>
+    </div>
+
+  </div>
+</section>
+
+<!-- Auraiya Digital Services — Section 03: Digital Service Navigator -->
+<section class="navigator" id="services" aria-labelledby="navigatorTitle">
+  <div class="navigator__inner">
+
+    <div class="navigator__intro">
+      <h2 class="navigator__title" id="navigatorTitle">आप यहां किस काम के लिए आए हैं?</h2>
+      <p class="navigator__text">अपनी जरूरत चुनें, हम आपको सही डिजिटल सेवा तक पहुंचाएंगे।</p>
+    </div>
+
+    <div class="navigator__grid">
+
+      <article class="nav-card">
+        <span class="nav-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
+        </span>
+        <h3 class="nav-card__title">Jan Seva Kendra</h3>
+        <p class="nav-card__text">सरकारी ऑनलाइन सेवाएं, फॉर्म, प्रमाणपत्र और दस्तावेज सहायता।</p>
+        <a class="nav-card__link" href="/jan-seva-kendra">
+          सेवाएं देखें<span class="visually-hidden">: Jan Seva Kendra</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <article class="nav-card">
+        <span class="nav-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/><path d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7"/></svg>
+        </span>
+        <h3 class="nav-card__title">Business Digital Solutions</h3>
+        <p class="nav-card__text">दुकानदारों और व्यवसायों के लिए डिजिटल समाधान।</p>
+        <a class="nav-card__link" href="/business-solutions">
+          समाधान देखें<span class="visually-hidden">: Business Digital Solutions</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <article class="nav-card">
+        <span class="nav-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+        </span>
+        <h3 class="nav-card__title">Website Development</h3>
+        <p class="nav-card__text">Business Website, Portfolio और E-commerce Website।</p>
+        <a class="nav-card__link" href="/website-design">
+          वेबसाइट विकल्प देखें<span class="visually-hidden">: Website Development</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </article>
+
+      <article class="nav-card nav-card--creative">
+        <span class="nav-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+        </span>
+        <h3 class="nav-card__title">Creative &amp; Digital</h3>
+        <p class="nav-card__text">Graphic Design, Typing, Google Business Profile और SEO।</p>
+        <a class="nav-card__link" href="/creative-digital">
+          सेवाएं देखें<span class="visually-hidden">: Creative &amp; Digital</span>
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Auraiya Digital Services — Section 04: Smart Service Search -->
+<section class="smart-search" id="search" aria-labelledby="searchTitle">
+  <div class="smart-search__inner">
+
+    <div class="smart-search__intro">
+      <h2 class="smart-search__title" id="searchTitle">आप कौन-सी सेवा ढूंढ रहे हैं?</h2>
+      <p class="smart-search__text">अपनी जरूरत लिखें और संबंधित सेवा तक पहुंचें।</p>
+    </div>
+
+    <form class="smart-search__form" role="search" autocomplete="off" novalidate>
+      <label class="smart-search__label" for="searchInput">सेवा खोजें</label>
+
+      <div class="smart-search__field">
+        <div class="smart-search__box">
+          <svg class="smart-search__icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+
+          <input class="smart-search__input" id="searchInput" name="q" type="search"
+                 placeholder="जैसे: पैन कार्ड, वेबसाइट, हिंदी टाइपिंग"
+                 role="combobox" aria-autocomplete="list" aria-expanded="false"
+                 aria-controls="searchSuggestions" enterkeyhint="search">
+
+          <button class="smart-search__clear" type="button" aria-label="खोज साफ़ करें" hidden>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          </button>
+
+          <button class="smart-search__submit" type="submit">खोजें</button>
+        </div>
+
+        <ul class="smart-search__suggestions" id="searchSuggestions" role="listbox" aria-label="सुझाव" hidden></ul>
+      </div>
+    </form>
+
+    <div class="smart-search__popular">
+      <p class="smart-search__popular-label" id="popularLabel">लोकप्रिय खोज</p>
+      <ul class="smart-search__chips" aria-labelledby="popularLabel">
+        <li><button class="smart-search__chip" type="button">Website Design</button></li>
+        <li><button class="smart-search__chip" type="button">PAN Card</button></li>
+        <li><button class="smart-search__chip" type="button">Ration Card</button></li>
+        <li><button class="smart-search__chip" type="button">Online Forms</button></li>
+        <li><button class="smart-search__chip" type="button">Hindi Typing</button></li>
+        <li><button class="smart-search__chip" type="button">Graphic Design</button></li>
+      </ul>
+    </div>
+
+    <p class="smart-search__status" id="searchStatus" role="status"></p>
+
+    <div class="smart-search__results" id="searchResults" hidden>
+      <ul class="smart-search__list" id="searchList" aria-label="खोज परिणाम"></ul>
+
+      <div class="smart-search__empty" id="searchEmpty" hidden>
+        <span class="smart-search__empty-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="m13.5 8.5-5 5"/><path d="m8.5 8.5 5 5"/><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        </span>
+        <h3 class="smart-search__empty-title">कोई सेवा नहीं मिली</h3>
+        <p class="smart-search__empty-text">दूसरे शब्द आज़माएं, जैसे “पैन”, “वेबसाइट” या “टाइपिंग”। या अपनी जरूरत सीधे हमें बताएं।</p>
+        <a class="smart-search__empty-link" href="/contact">हमसे संपर्क करें</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Auraiya Digital Services — Section 05: Business Growth Studio -->
+<section class="studio" id="business-studio" aria-labelledby="studioTitle">
+  <div class="studio__inner">
+
+    <header class="studio__head">
+      <h2 class="studio__title" id="studioTitle">
+        सिर्फ वेबसाइट नहीं।
+        <span class="studio__title-line">अपने बिजनेस की डिजिटल पहचान बनाइए।</span>
+      </h2>
+      <p class="studio__text">दुकानदार, Professionals और स्थानीय व्यवसायों के लिए आधुनिक वेबसाइट एवं डिजिटल समाधान।</p>
+    </header>
+
+    <div class="studio__grid">
+
+      <!-- Featured: Website Development -->
+      <article class="studio-feature">
+        <div class="studio-feature__body">
+          <h3 class="studio-feature__title">Website Development</h3>
+          <p class="studio-feature__text">दुकान, क्लिनिक, कोचिंग या सेवा — आपके काम के हिसाब से तेज़, मोबाइल-फ्रेंडली वेबसाइट, जिस पर ग्राहक आपको ढूंढें और सीधे कॉल या WhatsApp करें।</p>
+
+          <ul class="studio-feature__list">
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Business Website</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>Portfolio Website</li>
+            <li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg>E-commerce Website</li>
+          </ul>
+
+          <a class="studio-link" href="/website-design">
+            वेबसाइट सेवाएं देखें<span class="visually-hidden">: Website Development</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <svg class="studio-feature__art" viewBox="0 0 520 310" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="studio-glow" cx="50%" cy="50%" r="50%">
+              <stop offset="0" stop-color="#176BFF" stop-opacity=".4"/>
+              <stop offset="1" stop-color="#176BFF" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="studio-blue" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#3B86FF"/>
+              <stop offset="1" stop-color="#176BFF"/>
+            </linearGradient>
+          </defs>
+
+          <ellipse cx="260" cy="170" rx="250" ry="140" fill="url(#studio-glow)"/>
+
+          <!-- Browser window -->
+          <rect x="20" y="30" width="360" height="236" rx="18" fill="#111823" stroke="#fff" stroke-opacity=".12"/>
+          <circle cx="42" cy="50" r="4" fill="#FF3D9A"/>
+          <circle cx="58" cy="50" r="4" fill="#fff" fill-opacity=".25"/>
+          <circle cx="74" cy="50" r="4" fill="#fff" fill-opacity=".25"/>
+          <rect x="100" y="43" width="180" height="14" rx="7" fill="#fff" fill-opacity=".08"/>
+          <path d="M20 68 H380" stroke="#fff" stroke-opacity=".08"/>
+
+          <rect x="40" y="88" width="180" height="16" rx="8" fill="#fff" fill-opacity=".75"/>
+          <rect x="40" y="114" width="140" height="9" rx="4.5" fill="#fff" fill-opacity=".25"/>
+          <rect x="40" y="130" width="112" height="9" rx="4.5" fill="#fff" fill-opacity=".25"/>
+          <rect x="40" y="152" width="84" height="26" rx="13" fill="#176BFF"/>
+          <rect x="134" y="152.5" width="84" height="25" rx="12.5" fill="none" stroke="#fff" stroke-opacity=".3"/>
+
+          <rect x="244" y="88" width="116" height="92" rx="12" fill="url(#studio-blue)"/>
+          <circle cx="322" cy="116" r="16" fill="#FF3D9A"/>
+          <path d="M244 160 C270 136 296 172 360 144 V168 a12 12 0 0 1 -12 12 H256 a12 12 0 0 1 -12 -12z" fill="#fff" fill-opacity=".18"/>
+
+          <rect x="40" y="196" width="96" height="52" rx="10" fill="#fff" fill-opacity=".06"/>
+          <rect x="148" y="196" width="96" height="52" rx="10" fill="#fff" fill-opacity=".06"/>
+          <rect x="256" y="196" width="96" height="52" rx="10" fill="#fff" fill-opacity=".06"/>
+          <circle cx="56" cy="212" r="6" fill="#176BFF"/>
+          <circle cx="164" cy="212" r="6" fill="#FF3D9A"/>
+          <circle cx="272" cy="212" r="6" fill="#176BFF"/>
+          <rect x="52" y="228" width="60" height="6" rx="3" fill="#fff" fill-opacity=".3"/>
+          <rect x="160" y="228" width="60" height="6" rx="3" fill="#fff" fill-opacity=".3"/>
+          <rect x="268" y="228" width="60" height="6" rx="3" fill="#fff" fill-opacity=".3"/>
+
+          <!-- Growth chart card -->
+          <rect x="398" y="14" width="106" height="66" rx="14" fill="#111823" stroke="#fff" stroke-opacity=".14"/>
+          <rect x="416" y="52" width="10" height="14" rx="3" fill="#176BFF"/>
+          <rect x="434" y="44" width="10" height="22" rx="3" fill="#176BFF"/>
+          <rect x="452" y="34" width="10" height="32" rx="3" fill="#176BFF"/>
+          <rect x="470" y="26" width="10" height="40" rx="3" fill="#FF3D9A"/>
+
+          <!-- Phone -->
+          <g transform="translate(336 92)">
+            <rect width="130" height="206" rx="24" fill="#0F1620" stroke="#fff" stroke-opacity=".22" stroke-width="1.5"/>
+            <rect x="42" y="10" width="46" height="6" rx="3" fill="#fff" fill-opacity=".18"/>
+            <rect x="16" y="32" width="98" height="54" rx="10" fill="url(#studio-blue)"/>
+            <circle cx="92" cy="50" r="8" fill="#FF3D9A"/>
+            <rect x="16" y="98" width="72" height="8" rx="4" fill="#fff" fill-opacity=".7"/>
+            <rect x="16" y="113" width="54" height="7" rx="3.5" fill="#fff" fill-opacity=".25"/>
+            <rect x="16" y="132" width="46" height="34" rx="8" fill="#fff" fill-opacity=".07"/>
+            <rect x="68" y="132" width="46" height="34" rx="8" fill="#fff" fill-opacity=".07"/>
+            <rect x="16" y="176" width="98" height="20" rx="10" fill="#FF3D9A"/>
+          </g>
+        </svg>
+      </article>
+
+      <!-- Branding & Graphic Design -->
+      <article class="studio-card studio-card--pink">
+        <span class="studio-card__art" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="64" height="64" fill="none" focusable="false">
+            <circle cx="26" cy="28" r="14" fill="#176BFF" fill-opacity=".9"/>
+            <circle cx="40" cy="28" r="14" fill="#FF3D9A" fill-opacity=".85"/>
+            <path d="M12 50 C22 42 30 56 52 44" stroke="#fff" stroke-opacity=".75" stroke-width="2" stroke-linecap="round"/>
+            <rect x="8" y="46" width="7" height="7" rx="2" fill="#fff"/>
+            <rect x="48" y="40" width="7" height="7" rx="2" fill="#fff"/>
+          </svg>
+        </span>
+        <div class="studio-card__body">
+          <h3 class="studio-card__title">Branding &amp; Graphic Design</h3>
+          <p class="studio-card__text">लोगो, पोस्टर, बैनर और सोशल मीडिया डिजाइन, जो आपकी दुकान को एक पहचान दें।</p>
+          <a class="studio-link" href="/creative-digital">
+            विवरण देखें<span class="visually-hidden">: Branding &amp; Graphic Design</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Google Business Profile -->
+      <article class="studio-card">
+        <span class="studio-card__art" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="64" height="64" fill="none" focusable="false">
+            <ellipse cx="32" cy="55" rx="14" ry="4" fill="#176BFF" fill-opacity=".25"/>
+            <path d="M32 6c-10.5 0-19 8.3-19 18.6 0 13.4 19 30.4 19 30.4s19-17 19-30.4C51 14.3 42.5 6 32 6Z" fill="#176BFF"/>
+            <circle cx="32" cy="24" r="9" fill="#0B0F14"/>
+            <path d="m32 18.5 2.2 4.4 4.8.7-3.5 3.4.8 4.8-4.3-2.3-4.3 2.3.8-4.8-3.5-3.4 4.8-.7z" fill="#FF3D9A"/>
+          </svg>
+        </span>
+        <div class="studio-card__body">
+          <h3 class="studio-card__title">Google Business Profile</h3>
+          <p class="studio-card__text">गूगल मैप्स और सर्च पर सही पता, समय और फोटो के साथ दिखें।</p>
+          <a class="studio-link" href="/services/google-business-profile">
+            विवरण देखें<span class="visually-hidden">: Google Business Profile</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Local SEO -->
+      <article class="studio-card">
+        <span class="studio-card__art" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="64" height="64" fill="none" focusable="false">
+            <circle cx="27" cy="27" r="17" stroke="#176BFF" stroke-width="5"/>
+            <path d="m40 40 15 15" stroke="#176BFF" stroke-width="6" stroke-linecap="round"/>
+            <path d="M17 33 L24 26 L29 30 L37 20" stroke="#FF3D9A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="37" cy="20" r="3" fill="#FF3D9A"/>
+          </svg>
+        </span>
+        <div class="studio-card__body">
+          <h3 class="studio-card__title">Local SEO</h3>
+          <p class="studio-card__text">आपके शहर में खोजने वाले ग्राहकों तक आपकी वेबसाइट पहुंचाने के उपाय।</p>
+          <a class="studio-link" href="/services/local-seo">
+            विवरण देखें<span class="visually-hidden">: Local SEO</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Website Maintenance -->
+      <article class="studio-card">
+        <span class="studio-card__art" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="64" height="64" fill="none" focusable="false">
+            <circle cx="32" cy="32" r="22" stroke="#176BFF" stroke-width="7" stroke-dasharray="7.2 6.1"/>
+            <circle cx="32" cy="32" r="16" fill="#176BFF"/>
+            <circle cx="32" cy="32" r="8" fill="#0B0F14"/>
+            <circle cx="32" cy="32" r="3.5" fill="#FF3D9A"/>
+          </svg>
+        </span>
+        <div class="studio-card__body">
+          <h3 class="studio-card__title">Website Maintenance</h3>
+          <p class="studio-card__text">अपडेट, सुरक्षा और छोटे बदलाव, ताकि आपकी वेबसाइट हमेशा चालू रहे।</p>
+          <a class="studio-link" href="/services/website-maintenance">
+            विवरण देखें<span class="visually-hidden">: Website Maintenance</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="studio__cta">
+      <a class="studio__cta-btn" href="/contact">
+        अपने बिजनेस के लिए वेबसाइट बनवाएं।
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Auraiya Digital Services — Section 06: Website Demo Gallery -->
+<section class="demos" id="demo-gallery" aria-labelledby="demosTitle">
+  <div class="demos__inner">
+
+    <header class="demos__head">
+      <div class="demos__head-text">
+        <h2 class="demos__title" id="demosTitle">देखिए, आपके बिजनेस की वेबसाइट कैसी दिख सकती है।</h2>
+        <p class="demos__text">अलग-अलग व्यवसायों के लिए वेबसाइट डिजाइन के उदाहरण।</p>
+      </div>
+      <a class="demos__all" href="/website-demos">
+        सभी डेमो देखें
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </header>
+
+    <div class="demos__grid">
+
+      <article class="demo-card">
+        <div class="demo-card__media">
+        <svg class="demo-card__art" viewBox="0 0 480 300" role="img" aria-label="Advocate website demo: डेस्कटॉप पर होमपेज और मोबाइल पर वही पेज, नेवी और सुनहरे रंग में" xmlns="http://www.w3.org/2000/svg">
+          <rect width="480" height="300" fill="#EEF1F7"/>
+          <g class="demo-art__desktop">
+            <rect x="28" y="30" width="330" height="224" rx="14" fill="#fff" stroke="#D9DEE6"/>
+            <circle cx="44" cy="42" r="3.5" fill="#D1D5DB"/><circle cx="56" cy="42" r="3.5" fill="#D1D5DB"/><circle cx="68" cy="42" r="3.5" fill="#D1D5DB"/>
+            <rect x="92" y="36" width="150" height="12" rx="6" fill="#F1F3F6"/>
+            <rect x="44" y="62" width="46" height="8" rx="4" fill="#C9A24B"/>
+            <rect x="210" y="63" width="26" height="6" rx="3" fill="#CBD2DC"/><rect x="246" y="63" width="26" height="6" rx="3" fill="#CBD2DC"/><rect x="282" y="63" width="26" height="6" rx="3" fill="#CBD2DC"/><rect x="318" y="63" width="24" height="6" rx="3" fill="#CBD2DC"/>
+            <rect x="44" y="82" width="298" height="96" rx="10" fill="#1B2A49"/>
+            <rect x="60" y="100" width="128" height="12" rx="6" fill="#fff"/>
+            <rect x="60" y="120" width="108" height="7" rx="3.5" fill="#fff" fill-opacity=".6"/>
+            <rect x="60" y="133" width="88" height="7" rx="3.5" fill="#fff" fill-opacity=".6"/>
+            <rect x="60" y="150" width="62" height="18" rx="9" fill="#C9A24B"/>
+            <g stroke="#C9A24B" stroke-width="2.5" stroke-linecap="round" fill="none"><path d="M286 104v50"/><path d="M252 112h68"/><path d="M252 112l-10 22M252 112l10 22M320 112l-10 22M320 112l10 22"/></g>
+<path d="M240 134a12 8 0 0 0 24 0z" fill="#C9A24B"/><path d="M308 134a12 8 0 0 0 24 0z" fill="#C9A24B"/><rect x="270" y="154" width="32" height="5" rx="2.5" fill="#C9A24B"/>
+            <rect x="44" y="192" width="90" height="46" rx="8" fill="#F3EBD6"/><rect x="148" y="192" width="90" height="46" rx="8" fill="#F3EBD6"/><rect x="252" y="192" width="90" height="46" rx="8" fill="#F3EBD6"/>
+            <circle cx="58" cy="206" r="5" fill="#C9A24B"/><circle cx="162" cy="206" r="5" fill="#C9A24B"/><circle cx="266" cy="206" r="5" fill="#C9A24B"/>
+            <rect x="54" y="220" width="56" height="6" rx="3" fill="#1B2A49" fill-opacity=".35"/><rect x="158" y="220" width="56" height="6" rx="3" fill="#1B2A49" fill-opacity=".35"/><rect x="262" y="220" width="56" height="6" rx="3" fill="#1B2A49" fill-opacity=".35"/>
+          </g>
+          <g class="demo-art__phone">
+            <g transform="translate(350 56)">
+              <rect width="104" height="214" rx="20" fill="#fff" stroke="#BFC7D3" stroke-width="1.5"/>
+              <rect x="34" y="8" width="36" height="5" rx="2.5" fill="#D1D5DB"/>
+              <rect x="12" y="26" width="30" height="6" rx="3" fill="#C9A24B"/>
+              <rect x="74" y="25" width="16" height="2.5" rx="1.25" fill="#9AA3B2"/><rect x="74" y="31" width="16" height="2.5" rx="1.25" fill="#9AA3B2"/><rect x="74" y="37" width="16" height="2.5" rx="1.25" fill="#9AA3B2"/>
+              <rect x="10" y="48" width="84" height="76" rx="8" fill="#1B2A49"/>
+              <rect x="18" y="58" width="52" height="8" rx="4" fill="#fff"/>
+              <rect x="18" y="73" width="40" height="5" rx="2.5" fill="#fff" fill-opacity=".6"/>
+              <rect x="18" y="98" width="38" height="14" rx="7" fill="#C9A24B"/>
+              <circle cx="78" cy="106" r="9" fill="#C9A24B"/>
+              <rect x="10" y="134" width="84" height="32" rx="6" fill="#F3EBD6"/>
+              <rect x="10" y="172" width="84" height="32" rx="6" fill="#F3EBD6"/>
+              <circle cx="22" cy="150" r="5" fill="#C9A24B"/><circle cx="22" cy="188" r="5" fill="#C9A24B"/>
+            </g>
+          </g>
+        </svg>
+        </div>
+        <div class="demo-card__body">
+          <p class="demo-card__cat">Legal</p>
+          <h3 class="demo-card__title">Advocate Website</h3>
+          <p class="demo-card__text">केस क्षेत्र, अनुभव और मुलाकात का समय बताने वाली भरोसेमंद वेबसाइट।</p>
+          <a class="demo-card__link" href="/website-demos/advocate">
+            डेमो देखें<span class="visually-hidden">: Advocate Website</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="demo-card">
+        <div class="demo-card__media">
+        <svg class="demo-card__art" viewBox="0 0 480 300" role="img" aria-label="Doctor website demo: डेस्कटॉप और मोबाइल पर क्लिनिक का होमपेज, हरे-नीले रंग में" xmlns="http://www.w3.org/2000/svg">
+          <rect width="480" height="300" fill="#EAF6F4"/>
+          <g class="demo-art__desktop">
+            <rect x="28" y="30" width="330" height="224" rx="14" fill="#fff" stroke="#D9DEE6"/>
+            <circle cx="44" cy="42" r="3.5" fill="#D1D5DB"/><circle cx="56" cy="42" r="3.5" fill="#D1D5DB"/><circle cx="68" cy="42" r="3.5" fill="#D1D5DB"/>
+            <rect x="92" y="36" width="150" height="12" rx="6" fill="#F1F3F6"/>
+            <rect x="44" y="62" width="46" height="8" rx="4" fill="#0E9F8E"/>
+            <rect x="210" y="63" width="26" height="6" rx="3" fill="#CBD2DC"/><rect x="246" y="63" width="26" height="6" rx="3" fill="#CBD2DC"/><rect x="282" y="63" width="26" height="6" rx="3" fill="#CBD2DC"/><rect x="318" y="63" width="24" height="6" rx="3" fill="#CBD2DC"/>
+            <rect x="44" y="82" width="298" height="96" rx="10" fill="#0F6B66"/>
+            <rect x="60" y="100" width="128" height="12" rx="6" fill="#fff"/>
+            <rect x="60" y="120" width="108" height="7" rx="3.5" fill="#fff" fill-opacity=".6"/>
+            <rect x="60" y="133" width="88" height="7" rx="3.5" fill="#fff" fill-opacity=".6"/>
+            <rect x="60" y="150" width="62" height="18" rx="9" fill="#FFFFFF"/>
+            <rect x="252" y="98" width="56" height="56" rx="16" fill="#fff" fill-opacity=".16"/>
+<rect x="276" y="109" width="8" height="34" rx="3" fill="#fff"/><rect x="263" y="122" width="34" height="8" rx="3" fill="#fff"/>
+<path d="M236 162h26l8-14 12 22 9-16 6 8h35" fill="none" stroke="#fff" stroke-opacity=".7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="44" y="192" width="90" height="46" rx="8" fill="#DDF3F0"/><rect x="148" y="192" width="90" height="46" rx="8" fill="#DDF3F0"/><rect x="252" y="192" width="90" height="46" rx="8" fill="#DDF3F0"/>
+            <circle cx="58" cy="206" r="5" fill="#0E9F8E"/><circle cx="162" cy="206" r="5" fill="#0E9F8E"/><circle cx="266" cy="206" r="5" fill="#0E9F8E"/>
+            <rect x="54" y="220" width="56" height="6" rx="3" fill="#0F6B66" fill-opacity=".35"/><rect x="158" y="220" width="56" height="6" rx="3" fill="#0F6B66" fill-opacity=".35"/><rect x="262" y="220" width="56" height="6" rx="3" fill="#0F6B66" fill-opacity=".35"/>
+          </g>
+          <g class="demo-art__phone">
+            <g transform="translate(350 56)">
+              <rect width="104" height="214" rx="20" fill="#fff" stroke="#BFC7D3" stroke-width="1.5"/>
+              <rect x="34" y="8" width="36" height="5" rx="2.5" fill="#D1D5DB"/>
+              <rect x="12" y="26" width="30" height="6" rx="3" fill="#0E9F8E"/>
+              <rect x="74" y="25" width="16" height="2.5" rx="1.25" fill="#9AA3B2"/><rect x="74" y="31" width="16" height="2.5" rx="1.25" fill="#9AA3B2"/><rect x="74" y="37" width="16" height="2.5" rx="1.25" fill="#9AA3B2"/>
+              <rect x="10" y="48" width="84" height="76" rx="8" fill="#0F6B66"/>
+              <rect x="18" y="58" width="52" height="8" rx="4" fill="#fff"/>
+              <rect x="18" y="73" width="40" height="5" rx="2.5" fill="#fff" fill-opacity=".6"/>
+              <rect x="18" y="98" width="38" height="14" rx="7" fill="#FFFFFF"/>
+              <circle cx="78" cy="106" r="9" fill="#0E9F8E"/>
+              <rect x="10" y="134" width="84" height="32" rx="6" fill="#DDF3F0"/>
+              <rect x="10" y="172" width="84" height="32" rx="6" fill="#DDF3F0"/>
+              <circle cx="22" cy="150" r="5" fill="#0E9F8E"/><circle cx="22" cy="188" r="5" fill="#0E9F8E"/>
+            </g>
+          </g>
+        </svg>
+        </div>
+        <div class="demo-card__body">
+          <p class="demo-card__cat">Healthcare</p>
+          <h3 class="demo-card__title">Doctor Website</h3>
+          <p class="demo-card__text">क्लिनिक की जानकारी, इलाज और ऑनलाइन अपॉइंटमेंट के साथ वेबसाइट।</p>
+          <a class="demo-card__link" href="/website-demos/doctor">
+            डेमो देखें<span class="visually-hidden">: Doctor Website</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="demo-card">
+        <div class="demo-card__media">
+        <svg class="demo-card__art" viewBox="0 0 480 300" role="img" aria-label="Coaching institute website demo: डेस्कटॉप और मोबाइल पर कोर्स और एडमिशन का होमपेज, बैंगनी रंग में" xmlns="http://www.w3.org/2000/svg">
+          <rect width="480" height="300" fill="#EEEDFB"/>
+          <g class="demo-art__desktop">
+            <rect x="28" y="30" width="330" height="224" rx="14" fill="#fff" stroke="#D9DEE6"/>
+            <circle cx="44" cy="42" r="3.5" fill="#D1D5DB"/><circle cx="56" cy="42" r="3.5" fill="#D1D5DB"/><circle cx="68" cy="42" r="3.5" fill="#D1D5DB"/>
+            <rect x="92" y="36" width="150" height="12" rx="6" fill="#F1F3F6"/>
+            <rect x="44" y="62" width="46" height="8" rx="4" fill="#4F46E5"/>
+            <rect x="210" y="63" width="26" height="6" rx="3" fill="#CBD2DC"/><rect x="246" y="63" width="26" height="6" rx="3" fill="#CBD2DC"/><rect x="282" y="63" width="26" height="6" rx="3" fill="#CBD2DC"/><rect x="318" y="63" width="24" height="6" rx="3" fill="#CBD2DC"/>
+            <rect x="44" y="82" width="298" height="96" rx="10" fill="#3730A3"/>
+            <rect x="60" y="100" width="128" height="12" rx="6" fill="#fff"/>
+            <rect x="60" y="120" width="108" height="7" rx="3.5" fill="#fff" fill-opacity=".6"/>
+            <rect x="60" y="133" width="88" height="7" rx="3.5" fill="#fff" fill-opacity=".6"/>
+            <rect x="60" y="150" width="62" height="18" rx="9" fill="#FBBF24"/>
+            <path d="M250 152 286 140 322 152V120L286 108 250 120z" fill="#fff" fill-opacity=".9"/><path d="M286 108v32" stroke="#4F46E5" stroke-width="2"/>
+<path d="m318 94 3 7 7 1-5 5 1 7-6-4-6 4 1-7-5-5 7-1z" fill="#FBBF24"/>
+            <rect x="44" y="192" width="90" height="46" rx="8" fill="#E4E3FB"/><rect x="148" y="192" width="90" height="46" rx="8" fill="#E4E3FB"/><rect x="252" y="192" width="90" height="46" rx="8" fill="#E4E3FB"/>
+            <circle cx="58" cy="206" r="5" fill="#4F46E5"/><circle cx="162" cy="206" r="5" fill="#4F46E5"/><circle cx="266" cy="206" r="5" fill="#4F46E5"/>
+            <rect x="54" y="220" width="56" height="6" rx="3" fill="#3730A3" fill-opacity=".35"/><rect x="158" y="220" width="56" height="6" rx="3" fill="#3730A3" fill-opacity=".35"/><rect x="262" y="220" width="56" height="6" rx="3" fill="#3730A3" fill-opacity=".35"/>
+          </g>
+          <g class="demo-art__phone">
+            <g transform="translate(350 56)">
+              <rect width="104" height="214" rx="20" fill="#fff" stroke="#BFC7D3" stroke-width="1.5"/>
+              <rect x="34" y="8" width="36" height="5" rx="2.5" fill="#D1D5DB"/>
+              <rect x="12" y="26" width="30" height="6" rx="3" fill="#4F46E5"/>
+              <rect x="74" y="25" width="16" height="2.5" rx="1.25" fill="#9AA3B2"/><rect x="74" y="31" width="16" height="2.5" rx="1.25" fill="#9AA3B2"/><rect x="74" y="37" width="16" height="2.5" rx="1.25" fill="#9AA3B2"/>
+              <rect x="10" y="48" width="84" height="76" rx="8" fill="#3730A3"/>
+              <rect x="18" y="58" width="52" height="8" rx="4" fill="#fff"/>
+              <rect x="18" y="73" width="40" height="5" rx="2.5" fill="#fff" fill-opacity=".6"/>
+              <rect x="18" y="98" width="38" height="14" rx="7" fill="#FBBF24"/>
+              <circle cx="78" cy="106" r="9" fill="#4F46E5"/>
+              <rect x="10" y="134" width="84" height="32" rx="6" fill="#E4E3FB"/>
+              <rect x="10" y="172" width="84" height="32" rx="6" fill="#E4E3FB"/>
+              <circle cx="22" cy="150" r="5" fill="#4F46E5"/><circle cx="22" cy="188" r="5" fill="#4F46E5"/>
+            </g>
+          </g>
+        </svg>
+        </div>
+        <div class="demo-card__body">
+          <p class="demo-card__cat">Education</p>
+          <h3 class="demo-card__title">Coaching Institute Website</h3>
+          <p class="demo-card__text">कोर्स, बैच, फैकल्टी और एडमिशन पूछताछ एक ही जगह।</p>
+          <a class="demo-card__link" href="/website-demos/coaching">
+            डेमो देखें<span class="visually-hidden">: Coaching Institute Website</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="demo-card">
+        <div class="demo-card__media">
+        <svg class="demo-card__art" viewBox="0 0 480 300" role="img" aria-label="Clothing store website demo: डेस्कटॉप और मोबाइल पर कलेक्शन का होमपेज, काले और गुलाबी रंग में" xmlns="http://www.w3.org/2000/svg">
+          <rect width="480" height="300" fill="#F5EFF2"/>
+          <g class="demo-art__desktop">
+            <rect x="28" y="30" width="330" height="224" rx="14" fill="#fff" stroke="#D9DEE6"/>
+            <circle cx="44" cy="42" r="3.5" fill="#D1D5DB"/><circle cx="56" cy="42" r="3.5" fill="#D1D5DB"/><circle cx="68" cy="42" r="3.5" fill="#D1D5DB"/>
+            <rect x="92" y="36" width="150" height="12" rx="6" fill="#F1F3F6"/>
+            <rect x="44" y="62" width="46" height="8" rx="4" fill="#E11D74"/>
+            <rect x="210" y="63" width="26" height="6" rx="3" fill="#CBD2DC"/><rect x="246" y="63" width="26" height="6" rx="3" fill="#CBD2DC"/><rect x="282" y="63" width="26" height="6" rx="3" fill="#CBD2DC"/><rect x="318" y="63" width="24" height="6" rx="3" fill="#CBD2DC"/>
+            <rect x="44" y="82" width="298" height="96" rx="10" fill="#1F1F24"/>
+            <rect x="60" y="100" width="128" height="12" rx="6" fill="#fff"/>
+            <rect x="60" y="120" width="108" height="7" rx="3.5" fill="#fff" fill-opacity=".6"/>
+            <rect x="60" y="133" width="88" height="7" rx="3.5" fill="#fff" fill-opacity=".6"/>
+            <rect x="60" y="150" width="62" height="18" rx="9" fill="#E11D74"/>
+            <path d="M286 120 254 146a4 4 0 0 0 3 7h58a4 4 0 0 0 3-7z" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>
+<path d="M286 120v-6a7 7 0 1 0-7-7" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+<circle cx="326" cy="104" r="5" fill="#E11D74"/><circle cx="244" cy="112" r="3" fill="#fff" fill-opacity=".5"/>
+            <rect x="44" y="192" width="90" height="46" rx="8" fill="#FBE3EE"/><rect x="148" y="192" width="90" height="46" rx="8" fill="#FBE3EE"/><rect x="252" y="192" width="90" height="46" rx="8" fill="#FBE3EE"/>
+            <circle cx="58" cy="206" r="5" fill="#E11D74"/><circle cx="162" cy="206" r="5" fill="#E11D74"/><circle cx="266" cy="206" r="5" fill="#E11D74"/>
+            <rect x="54" y="220" width="56" height="6" rx="3" fill="#1F1F24" fill-opacity=".35"/><rect x="158" y="220" width="56" height="6" rx="3" fill="#1F1F24" fill-opacity=".35"/><rect x="262" y="220" width="56" height="6" rx="3" fill="#1F1F24" fill-opacity=".35"/>
+          </g>
+          <g class="demo-art__phone">
+            <g transform="translate(350 56)">
+              <rect width="104" height="214" rx="20" fill="#fff" stroke="#BFC7D3" stroke-width="1.5"/>
+              <rect x="34" y="8" width="36" height="5" rx="2.5" fill="#D1D5DB"/>
+              <rect x="12" y="26" width="30" height="6" rx="3" fill="#E11D74"/>
+              <rect x="74" y="25" width="16" height="2.5" rx="1.25" fill="#9AA3B2"/><rect x="74" y="31" width="16" height="2.5" rx="1.25" fill="#9AA3B2"/><rect x="74" y="37" width="16" height="2.5" rx="1.25" fill="#9AA3B2"/>
+              <rect x="10" y="48" width="84" height="76" rx="8" fill="#1F1F24"/>
+              <rect x="18" y="58" width="52" height="8" rx="4" fill="#fff"/>
+              <rect x="18" y="73" width="40" height="5" rx="2.5" fill="#fff" fill-opacity=".6"/>
+              <rect x="18" y="98" width="38" height="14" rx="7" fill="#E11D74"/>
+              <circle cx="78" cy="106" r="9" fill="#E11D74"/>
+              <rect x="10" y="134" width="84" height="32" rx="6" fill="#FBE3EE"/>
+              <rect x="10" y="172" width="84" height="32" rx="6" fill="#FBE3EE"/>
+              <circle cx="22" cy="150" r="5" fill="#E11D74"/><circle cx="22" cy="188" r="5" fill="#E11D74"/>
+            </g>
+          </g>
+        </svg>
+        </div>
+        <div class="demo-card__body">
+          <p class="demo-card__cat">Retail & Fashion</p>
+          <h3 class="demo-card__title">Clothing Store Website</h3>
+          <p class="demo-card__text">कलेक्शन दिखाएं और ग्राहक सीधे WhatsApp पर ऑर्डर करें।</p>
+          <a class="demo-card__link" href="/website-demos/clothing-store">
+            डेमो देखें<span class="visually-hidden">: Clothing Store Website</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="demo-card">
+        <div class="demo-card__media">
+        <svg class="demo-card__art" viewBox="0 0 480 300" role="img" aria-label="Real estate website demo: डेस्कटॉप और मोबाइल पर प्रॉपर्टी का होमपेज, हरे रंग में" xmlns="http://www.w3.org/2000/svg">
+          <rect width="480" height="300" fill="#E9F4EC"/>
+          <g class="demo-art__desktop">
+            <rect x="28" y="30" width="330" height="224" rx="14" fill="#fff" stroke="#D9DEE6"/>
+            <circle cx="44" cy="42" r="3.5" fill="#D1D5DB"/><circle cx="56" cy="42" r="3.5" fill="#D1D5DB"/><circle cx="68" cy="42" r="3.5" fill="#D1D5DB"/>
+            <rect x="92" y="36" width="150" height="12" rx="6" fill="#F1F3F6"/>
+            <rect x="44" y="62" width="46" height="8" rx="4" fill="#15803D"/>
+            <rect x="210" y="63" width="26" height="6" rx="3" fill="#CBD2DC"/><rect x="246" y="63" width="26" height="6" rx="3" fill="#CBD2DC"/><rect x="282" y="63" width="26" height="6" rx="3" fill="#CBD2DC"/><rect x="318" y="63" width="24" height="6" rx="3" fill="#CBD2DC"/>
+            <rect x="44" y="82" width="298" height="96" rx="10" fill="#14532D"/>
+            <rect x="60" y="100" width="128" height="12" rx="6" fill="#fff"/>
+            <rect x="60" y="120" width="108" height="7" rx="3.5" fill="#fff" fill-opacity=".6"/>
+            <rect x="60" y="133" width="88" height="7" rx="3.5" fill="#fff" fill-opacity=".6"/>
+            <rect x="60" y="150" width="62" height="18" rx="9" fill="#F59E0B"/>
+            <g fill="#fff" fill-opacity=".9"><rect x="244" y="130" width="24" height="34" rx="2"/><rect x="272" y="104" width="30" height="60" rx="2"/><rect x="306" y="122" width="26" height="42" rx="2"/></g>
+<g fill="#15803D"><rect x="279" y="112" width="6" height="6"/><rect x="290" y="112" width="6" height="6"/><rect x="279" y="126" width="6" height="6"/><rect x="290" y="126" width="6" height="6"/><rect x="250" y="138" width="5" height="5"/><rect x="258" y="138" width="5" height="5"/><rect x="313" y="130" width="5" height="5"/><rect x="321" y="130" width="5" height="5"/></g>
+<path d="M240 164h96" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+            <rect x="44" y="192" width="90" height="46" rx="8" fill="#DDF1E3"/><rect x="148" y="192" width="90" height="46" rx="8" fill="#DDF1E3"/><rect x="252" y="192" width="90" height="46" rx="8" fill="#DDF1E3"/>
+            <circle cx="58" cy="206" r="5" fill="#15803D"/><circle cx="162" cy="206" r="5" fill="#15803D"/><circle cx="266" cy="206" r="5" fill="#15803D"/>
+            <rect x="54" y="220" width="56" height="6" rx="3" fill="#14532D" fill-opacity=".35"/><rect x="158" y="220" width="56" height="6" rx="3" fill="#14532D" fill-opacity=".35"/><rect x="262" y="220" width="56" height="6" rx="3" fill="#14532D" fill-opacity=".35"/>
+          </g>
+          <g class="demo-art__phone">
+            <g transform="translate(350 56)">
+              <rect width="104" height="214" rx="20" fill="#fff" stroke="#BFC7D3" stroke-width="1.5"/>
+              <rect x="34" y="8" width="36" height="5" rx="2.5" fill="#D1D5DB"/>
+              <rect x="12" y="26" width="30" height="6" rx="3" fill="#15803D"/>
+              <rect x="74" y="25" width="16" height="2.5" rx="1.25" fill="#9AA3B2"/><rect x="74" y="31" width="16" height="2.5" rx="1.25" fill="#9AA3B2"/><rect x="74" y="37" width="16" height="2.5" rx="1.25" fill="#9AA3B2"/>
+              <rect x="10" y="48" width="84" height="76" rx="8" fill="#14532D"/>
+              <rect x="18" y="58" width="52" height="8" rx="4" fill="#fff"/>
+              <rect x="18" y="73" width="40" height="5" rx="2.5" fill="#fff" fill-opacity=".6"/>
+              <rect x="18" y="98" width="38" height="14" rx="7" fill="#F59E0B"/>
+              <circle cx="78" cy="106" r="9" fill="#15803D"/>
+              <rect x="10" y="134" width="84" height="32" rx="6" fill="#DDF1E3"/>
+              <rect x="10" y="172" width="84" height="32" rx="6" fill="#DDF1E3"/>
+              <circle cx="22" cy="150" r="5" fill="#15803D"/><circle cx="22" cy="188" r="5" fill="#15803D"/>
+            </g>
+          </g>
+        </svg>
+        </div>
+        <div class="demo-card__body">
+          <p class="demo-card__cat">Real Estate</p>
+          <h3 class="demo-card__title">Real Estate Website</h3>
+          <p class="demo-card__text">प्रॉपर्टी लिस्टिंग, लोकेशन और पूछताछ फॉर्म के साथ वेबसाइट।</p>
+          <a class="demo-card__link" href="/website-demos/real-estate">
+            डेमो देखें<span class="visually-hidden">: Real Estate Website</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="demo-card">
+        <div class="demo-card__media">
+        <svg class="demo-card__art" viewBox="0 0 480 300" role="img" aria-label="Restaurant website demo: डेस्कटॉप और मोबाइल पर मेन्यू का होमपेज, लाल रंग में" xmlns="http://www.w3.org/2000/svg">
+          <rect width="480" height="300" fill="#FAEFEA"/>
+          <g class="demo-art__desktop">
+            <rect x="28" y="30" width="330" height="224" rx="14" fill="#fff" stroke="#D9DEE6"/>
+            <circle cx="44" cy="42" r="3.5" fill="#D1D5DB"/><circle cx="56" cy="42" r="3.5" fill="#D1D5DB"/><circle cx="68" cy="42" r="3.5" fill="#D1D5DB"/>
+            <rect x="92" y="36" width="150" height="12" rx="6" fill="#F1F3F6"/>
+            <rect x="44" y="62" width="46" height="8" rx="4" fill="#B91C1C"/>
+            <rect x="210" y="63" width="26" height="6" rx="3" fill="#CBD2DC"/><rect x="246" y="63" width="26" height="6" rx="3" fill="#CBD2DC"/><rect x="282" y="63" width="26" height="6" rx="3" fill="#CBD2DC"/><rect x="318" y="63" width="24" height="6" rx="3" fill="#CBD2DC"/>
+            <rect x="44" y="82" width="298" height="96" rx="10" fill="#7F1D1D"/>
+            <rect x="60" y="100" width="128" height="12" rx="6" fill="#fff"/>
+            <rect x="60" y="120" width="108" height="7" rx="3.5" fill="#fff" fill-opacity=".6"/>
+            <rect x="60" y="133" width="88" height="7" rx="3.5" fill="#fff" fill-opacity=".6"/>
+            <rect x="60" y="150" width="62" height="18" rx="9" fill="#FBBF24"/>
+            <circle cx="286" cy="132" r="34" fill="#fff" fill-opacity=".14" stroke="#fff" stroke-opacity=".8" stroke-width="2"/><circle cx="286" cy="132" r="21" fill="none" stroke="#fff" stroke-opacity=".5" stroke-width="2"/><circle cx="286" cy="132" r="8" fill="#FBBF24"/>
+<path d="M240 110v50M236 110v14a4 4 0 0 0 8 0v-14" fill="none" stroke="#fff" stroke-opacity=".8" stroke-width="2" stroke-linecap="round"/><path d="M332 110c-6 6-6 22 0 28v22" fill="none" stroke="#fff" stroke-opacity=".8" stroke-width="2" stroke-linecap="round"/>
+            <rect x="44" y="192" width="90" height="46" rx="8" fill="#FBE1DE"/><rect x="148" y="192" width="90" height="46" rx="8" fill="#FBE1DE"/><rect x="252" y="192" width="90" height="46" rx="8" fill="#FBE1DE"/>
+            <circle cx="58" cy="206" r="5" fill="#B91C1C"/><circle cx="162" cy="206" r="5" fill="#B91C1C"/><circle cx="266" cy="206" r="5" fill="#B91C1C"/>
+            <rect x="54" y="220" width="56" height="6" rx="3" fill="#7F1D1D" fill-opacity=".35"/><rect x="158" y="220" width="56" height="6" rx="3" fill="#7F1D1D" fill-opacity=".35"/><rect x="262" y="220" width="56" height="6" rx="3" fill="#7F1D1D" fill-opacity=".35"/>
+          </g>
+          <g class="demo-art__phone">
+            <g transform="translate(350 56)">
+              <rect width="104" height="214" rx="20" fill="#fff" stroke="#BFC7D3" stroke-width="1.5"/>
+              <rect x="34" y="8" width="36" height="5" rx="2.5" fill="#D1D5DB"/>
+              <rect x="12" y="26" width="30" height="6" rx="3" fill="#B91C1C"/>
+              <rect x="74" y="25" width="16" height="2.5" rx="1.25" fill="#9AA3B2"/><rect x="74" y="31" width="16" height="2.5" rx="1.25" fill="#9AA3B2"/><rect x="74" y="37" width="16" height="2.5" rx="1.25" fill="#9AA3B2"/>
+              <rect x="10" y="48" width="84" height="76" rx="8" fill="#7F1D1D"/>
+              <rect x="18" y="58" width="52" height="8" rx="4" fill="#fff"/>
+              <rect x="18" y="73" width="40" height="5" rx="2.5" fill="#fff" fill-opacity=".6"/>
+              <rect x="18" y="98" width="38" height="14" rx="7" fill="#FBBF24"/>
+              <circle cx="78" cy="106" r="9" fill="#B91C1C"/>
+              <rect x="10" y="134" width="84" height="32" rx="6" fill="#FBE1DE"/>
+              <rect x="10" y="172" width="84" height="32" rx="6" fill="#FBE1DE"/>
+              <circle cx="22" cy="150" r="5" fill="#B91C1C"/><circle cx="22" cy="188" r="5" fill="#B91C1C"/>
+            </g>
+          </g>
+        </svg>
+        </div>
+        <div class="demo-card__body">
+          <p class="demo-card__cat">Food & Hospitality</p>
+          <h3 class="demo-card__title">Restaurant Website</h3>
+          <p class="demo-card__text">मेन्यू, टेबल बुकिंग और होम डिलीवरी की जानकारी।</p>
+          <a class="demo-card__link" href="/website-demos/restaurant">
+            डेमो देखें<span class="visually-hidden">: Restaurant Website</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Auraiya Digital Services — Section 07: Featured Portfolio -->
+<section class="portfolio" id="portfolio-featured" aria-labelledby="portfolioTitle">
+  <div class="portfolio__inner">
+
+    <header class="portfolio__head">
+      <div class="portfolio__head-text">
+        <h2 class="portfolio__title" id="portfolioTitle">हमारे काम की एक झलक।</h2>
+        <p class="portfolio__text">वेबसाइट और डिजिटल प्रोजेक्ट्स जिन्हें हमने तैयार किया।</p>
+      </div>
+      <a class="portfolio__all" href="/portfolio">
+        सभी प्रोजेक्ट देखें
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </header>
+
+    <div class="portfolio__grid">
+
+      <!-- Featured project -->
+      <article class="project project--featured">
+        <div class="project__media">
+          <svg class="project__art" viewBox="0 -40 640 560" preserveAspectRatio="xMidYMid slice" role="img"
+               aria-label="Rahul Sengar Advocate Website का स्क्रीनशॉट: डेस्कटॉप पर नेवी और सुनहरे रंग का होमपेज, जिसमें वकील की तस्वीर और केस क्षेत्र दिखते हैं, और मोबाइल पर वही पेज"
+               xmlns="http://www.w3.org/2000/svg">
+            <rect y="-40" width="640" height="560" fill="#EEF1F7"/>
+            <g class="project__layer project__layer--desktop">
+              <rect x="36" y="40" width="500" height="360" rx="18" fill="#fff" stroke="#D9DEE6"/>
+              <circle cx="58" cy="60" r="4" fill="#D1D5DB"/><circle cx="72" cy="60" r="4" fill="#D1D5DB"/><circle cx="86" cy="60" r="4" fill="#D1D5DB"/>
+              <rect x="116" y="53" width="200" height="14" rx="7" fill="#F1F3F6"/>
+              <rect x="60" y="86" width="64" height="10" rx="5" fill="#C9A24B"/>
+              <rect x="330" y="88" width="34" height="7" rx="3.5" fill="#CBD2DC"/><rect x="374" y="88" width="34" height="7" rx="3.5" fill="#CBD2DC"/><rect x="418" y="88" width="34" height="7" rx="3.5" fill="#CBD2DC"/><rect x="462" y="88" width="50" height="7" rx="3.5" fill="#CBD2DC"/>
+              <rect x="60" y="112" width="452" height="172" rx="14" fill="#1B2A49"/>
+              <circle cx="420" cy="196" r="76" fill="none" stroke="#C9A24B" stroke-opacity=".35" stroke-width="2"/>
+              <circle cx="420" cy="176" r="22" fill="#E7D3A0"/>
+              <path d="M374 284 C374 226 466 226 466 284Z" fill="#E7D3A0"/>
+              <rect x="84" y="140" width="212" height="18" rx="9" fill="#fff"/>
+              <rect x="84" y="168" width="172" height="18" rx="9" fill="#fff"/>
+              <rect x="84" y="200" width="200" height="8" rx="4" fill="#fff" fill-opacity=".6"/>
+              <rect x="84" y="214" width="160" height="8" rx="4" fill="#fff" fill-opacity=".6"/>
+              <rect x="84" y="240" width="104" height="26" rx="13" fill="#C9A24B"/>
+              <rect x="198" y="240.5" width="96" height="25" rx="12.5" fill="none" stroke="#fff" stroke-opacity=".4"/>
+              <rect x="60" y="300" width="140" height="84" rx="12" fill="#F3EBD6"/><rect x="216" y="300" width="140" height="84" rx="12" fill="#F3EBD6"/><rect x="372" y="300" width="140" height="84" rx="12" fill="#F3EBD6"/>
+              <circle cx="82" cy="324" r="8" fill="#C9A24B"/><circle cx="238" cy="324" r="8" fill="#C9A24B"/><circle cx="394" cy="324" r="8" fill="#C9A24B"/>
+              <rect x="76" y="346" width="90" height="8" rx="4" fill="#1B2A49" fill-opacity=".5"/><rect x="232" y="346" width="90" height="8" rx="4" fill="#1B2A49" fill-opacity=".5"/><rect x="388" y="346" width="90" height="8" rx="4" fill="#1B2A49" fill-opacity=".5"/>
+              <rect x="76" y="362" width="64" height="6" rx="3" fill="#1B2A49" fill-opacity=".25"/><rect x="232" y="362" width="64" height="6" rx="3" fill="#1B2A49" fill-opacity=".25"/><rect x="388" y="362" width="64" height="6" rx="3" fill="#1B2A49" fill-opacity=".25"/>
+            </g>
+            <g class="project__layer project__layer--phone">
+              <g transform="translate(470 124)">
+                <rect width="140" height="316" rx="28" fill="#fff" stroke="#BFC7D3" stroke-width="2"/>
+                <rect x="48" y="12" width="44" height="6" rx="3" fill="#D1D5DB"/>
+                <rect x="16" y="38" width="40" height="8" rx="4" fill="#C9A24B"/>
+                <rect x="100" y="36" width="24" height="3" rx="1.5" fill="#9AA3B2"/><rect x="100" y="44" width="24" height="3" rx="1.5" fill="#9AA3B2"/><rect x="100" y="52" width="24" height="3" rx="1.5" fill="#9AA3B2"/>
+                <rect x="12" y="70" width="116" height="116" rx="12" fill="#1B2A49"/>
+                <rect x="24" y="86" width="72" height="11" rx="5.5" fill="#fff"/>
+                <rect x="24" y="104" width="58" height="11" rx="5.5" fill="#fff"/>
+                <circle cx="98" cy="150" r="14" fill="#E7D3A0"/>
+                <rect x="24" y="152" width="54" height="20" rx="10" fill="#C9A24B"/>
+                <rect x="12" y="200" width="116" height="46" rx="10" fill="#F3EBD6"/>
+                <rect x="12" y="254" width="116" height="46" rx="10" fill="#F3EBD6"/>
+                <circle cx="30" cy="223" r="7" fill="#C9A24B"/><circle cx="30" cy="277" r="7" fill="#C9A24B"/>
+                <rect x="46" y="217" width="60" height="7" rx="3.5" fill="#1B2A49" fill-opacity=".45"/><rect x="46" y="271" width="60" height="7" rx="3.5" fill="#1B2A49" fill-opacity=".45"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="project__body">
+          <p class="project__cat">Legal Website</p>
+          <h3 class="project__title">Rahul Sengar Advocate Website</h3>
+          <p class="project__text">एडवोकेट की पेशेवर पहचान, केस क्षेत्र, अनुभव और मुलाकात की जानकारी के साथ भरोसेमंद वेबसाइट।</p>
+          <a class="project__link" href="/portfolio/rahul-sengar-advocate">
+            प्रोजेक्ट देखें<span class="visually-hidden">: Rahul Sengar Advocate Website</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Auraiya Digital Services Website -->
+      <article class="project">
+        <div class="project__media">
+          <svg class="project__art" viewBox="0 0 480 210" preserveAspectRatio="xMidYMid slice" role="img"
+               aria-label="Auraiya Digital Services वेबसाइट का स्क्रीनशॉट: गहरे रंग का होमपेज, जिसमें नीले और गुलाबी रंग के सेवा कार्ड दिखते हैं, और मोबाइल पर वही पेज"
+               xmlns="http://www.w3.org/2000/svg">
+            <rect width="480" height="210" fill="#E8EEFB"/>
+            <g class="project__layer project__layer--desktop">
+              <rect x="24" y="22" width="330" height="170" rx="14" fill="#0B0F14" stroke="#1F2937"/>
+              <circle cx="40" cy="36" r="3.5" fill="#FF3D9A"/><circle cx="52" cy="36" r="3.5" fill="#fff" fill-opacity=".25"/><circle cx="64" cy="36" r="3.5" fill="#fff" fill-opacity=".25"/>
+              <path d="M24 48H354" stroke="#fff" stroke-opacity=".08"/>
+              <rect x="42" y="62" width="40" height="7" rx="3.5" fill="#176BFF"/>
+              <rect x="226" y="63" width="24" height="5" rx="2.5" fill="#fff" fill-opacity=".3"/><rect x="258" y="63" width="24" height="5" rx="2.5" fill="#fff" fill-opacity=".3"/><rect x="290" y="63" width="24" height="5" rx="2.5" fill="#fff" fill-opacity=".3"/>
+              <rect x="42" y="92" width="130" height="12" rx="6" fill="#fff"/>
+              <rect x="42" y="110" width="104" height="12" rx="6" fill="#fff"/>
+              <rect x="42" y="132" width="116" height="6" rx="3" fill="#fff" fill-opacity=".45"/>
+              <rect x="42" y="144" width="92" height="6" rx="3" fill="#fff" fill-opacity=".45"/>
+              <rect x="42" y="160" width="58" height="16" rx="8" fill="#176BFF"/>
+              <rect x="108" y="160.5" width="58" height="15" rx="7.5" fill="none" stroke="#fff" stroke-opacity=".35"/>
+              <rect x="206" y="88" width="68" height="46" rx="10" fill="#111823" stroke="#fff" stroke-opacity=".12"/>
+              <rect x="226" y="108" width="84" height="56" rx="10" fill="#176BFF"/>
+              <rect x="284" y="82" width="52" height="40" rx="10" fill="#111823" stroke="#fff" stroke-opacity=".12"/>
+              <circle cx="310" cy="102" r="9" fill="#FF3D9A"/>
+              <rect x="214" y="98" width="30" height="5" rx="2.5" fill="#fff" fill-opacity=".6"/>
+              <rect x="214" y="110" width="22" height="5" rx="2.5" fill="#fff" fill-opacity=".3"/>
+            </g>
+            <g class="project__layer project__layer--phone">
+              <g transform="translate(372 40)">
+                <rect width="88" height="190" rx="18" fill="#0B0F14" stroke="#374151" stroke-width="1.5"/>
+                <rect x="28" y="8" width="32" height="4" rx="2" fill="#374151"/>
+                <rect x="12" y="26" width="24" height="5" rx="2.5" fill="#176BFF"/>
+                <rect x="12" y="46" width="64" height="9" rx="4.5" fill="#fff"/>
+                <rect x="12" y="60" width="50" height="9" rx="4.5" fill="#fff"/>
+                <rect x="12" y="78" width="56" height="5" rx="2.5" fill="#fff" fill-opacity=".45"/>
+                <rect x="12" y="94" width="44" height="14" rx="7" fill="#176BFF"/>
+                <rect x="12" y="120" width="64" height="30" rx="8" fill="#111823" stroke="#fff" stroke-opacity=".12"/>
+                <circle cx="26" cy="135" r="6" fill="#FF3D9A"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="project__body">
+          <p class="project__cat">Business Website</p>
+          <h3 class="project__title">Auraiya Digital Services Website</h3>
+          <p class="project__text">Jan Seva Kendra, वेबसाइट और डिजिटल सेवाओं को एक ही जगह दिखाने वाली हमारी अपनी वेबसाइट।</p>
+          <a class="project__link" href="/portfolio/auraiya-digital-services">
+            प्रोजेक्ट देखें<span class="visually-hidden">: Auraiya Digital Services Website</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Future Client Projects -->
+      <article class="project">
+        <div class="project__media">
+          <svg class="project__art" viewBox="0 0 480 210" preserveAspectRatio="xMidYMid slice" role="img"
+               aria-label="खाली वेबसाइट मॉकअप, जिस पर प्लस का निशान है — यह आने वाले क्लाइंट प्रोजेक्ट्स की जगह है"
+               xmlns="http://www.w3.org/2000/svg">
+            <rect width="480" height="210" fill="#F3F4F6"/>
+            <g class="project__layer project__layer--desktop">
+              <rect x="24" y="22" width="330" height="170" rx="14" fill="#fff" stroke="#BFC7D3" stroke-dasharray="6 6"/>
+              <circle cx="40" cy="36" r="3.5" fill="#D1D5DB"/><circle cx="52" cy="36" r="3.5" fill="#D1D5DB"/><circle cx="64" cy="36" r="3.5" fill="#D1D5DB"/>
+              <path d="M24 48H354" stroke="#E5E7EB"/>
+              <circle cx="189" cy="112" r="28" fill="#EAF1FF"/>
+              <path d="M189 98v28M175 112h28" stroke="#176BFF" stroke-width="4" stroke-linecap="round"/>
+              <rect x="124" y="156" width="130" height="7" rx="3.5" fill="#E5E7EB"/>
+              <rect x="146" y="170" width="86" height="7" rx="3.5" fill="#E5E7EB"/>
+            </g>
+            <g class="project__layer project__layer--phone">
+              <g transform="translate(372 40)">
+                <rect width="88" height="190" rx="18" fill="#fff" stroke="#BFC7D3" stroke-width="1.5" stroke-dasharray="6 6"/>
+                <rect x="28" y="8" width="32" height="4" rx="2" fill="#E5E7EB"/>
+                <rect x="14" y="44" width="60" height="50" rx="10" fill="#EAF1FF"/>
+                <path d="M44 61v16M36 69h16" stroke="#176BFF" stroke-width="3" stroke-linecap="round"/>
+                <rect x="14" y="108" width="60" height="6" rx="3" fill="#E5E7EB"/>
+                <rect x="14" y="120" width="44" height="6" rx="3" fill="#E5E7EB"/>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="project__body">
+          <p class="project__cat">Coming Next</p>
+          <h3 class="project__title">Future Client Projects</h3>
+          <p class="project__text">अगला प्रोजेक्ट आपका हो सकता है। अपने बिजनेस की जरूरत बताइए, हम शुरुआत करेंगे।</p>
+          <a class="project__link" href="/contact">
+            बातचीत शुरू करें<span class="visually-hidden">: Future Client Projects</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- Section 08: How We Work -->
+<section id="how-it-works" class="work-process-section">
+  <div class="process-container">
+    <div class="process-header">
+      <span class="process-badge">हमारी कार्यप्रणाली</span>
+      <h2 class="process-title">आपके काम से लेकर डिजिटल समाधान तक।</h2>
+    </div>
+
+    <ol class="timeline">
+      <!-- Step 01 -->
+      <li class="timeline-step">
+        <div class="timeline-node">
+          <span class="step-num">01</span>
+          <div class="icon-bubble">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="step-content">
+          <h3 class="step-title">आवश्यकता समझना</h3>
+          <p class="step-desc">आपकी जरूरत, बजट और उद्देश्य को समझना।</p>
+        </div>
+      </li>
+
+      <!-- Step 02 -->
+      <li class="timeline-step">
+        <div class="timeline-node">
+          <span class="step-num">02</span>
+          <div class="icon-bubble">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="m9 12 2 2 4-4"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="step-content">
+          <h3 class="step-title">सही समाधान</h3>
+          <p class="step-desc">उपयुक्त सेवा, प्रक्रिया और लागत की जानकारी।</p>
+        </div>
+      </li>
+
+      <!-- Step 03 -->
+      <li class="timeline-step">
+        <div class="timeline-node">
+          <span class="step-num">03</span>
+          <div class="icon-bubble">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="step-content">
+          <h3 class="step-title">काम पूरा करना</h3>
+          <p class="step-desc">निर्धारित कार्य को पूरा करना और जरूरी जांच।</p>
+        </div>
+      </li>
+
+      <!-- Step 04 -->
+      <li class="timeline-step">
+        <div class="timeline-node">
+          <span class="step-num">04</span>
+          <div class="icon-bubble">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+        </div>
+        <div class="step-content">
+          <h3 class="step-title">Delivery & Support</h3>
+          <p class="step-desc">काम की डिलीवरी और निर्धारित सपोर्ट।</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- Section 09: About & Local Trust -->
+<section id="about-local-trust" class="about-section">
+  <div class="about-container">
+    
+    <!-- Left Column: Real Office Visual & Badges -->
+    <div class="about-media-col">
+      <div class="media-card">
+        <img 
+          src="office-auraiya.jpg" 
+          alt="Auraiya Digital Services कार्यस्थल औरैया" 
+          class="office-image"
+          loading="lazy"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        />
+        <!-- Accessible fallback display if image path needs local binding -->
+        <div class="media-placeholder" style="display: none;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="placeholder-icon">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+          <span>Auraiya Digital Services Office</span>
+        </div>
+
+        <div class="verified-tag">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            <path d="m9 12 2 2 4-4"></path>
+          </svg>
+          <span>प्रमाणित स्थानीय सेवा केंद्र</span>
+        </div>
+      </div>
+
+      <div class="location-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+          <circle cx="12" cy="10" r="3"></circle>
+        </svg>
+        <div>
+          <strong>स्थान:</strong> औरैया, उत्तर प्रदेश (206122)
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Business Content & Verification Details -->
+    <div class="about-content-col">
+      <span class="sub-badge">स्थानीय विश्वास एवं प्रामाणिकता</span>
+      <h2 class="section-title">औरैया में आपकी डिजिटल सेवाओं का साथी।</h2>
+
+      <p class="lead-text">
+        Auraiya Digital Services स्थानीय नागरिकों और व्यवसायों के लिए डिजिटल सेवाएं, ऑनलाइन सहायता और वेबसाइट समाधान प्रदान करता है।
+      </p>
+
+      <div class="founder-block">
+        <h3 class="founder-title">संस्थापक: प्रशांत सिंह (Prashant Singh)</h3>
+        <p class="founder-text">
+          स्थानीय स्तर पर भरोसेमंद तकनीकी परामर्श, पारदर्शी कार्यप्रणाली और नागरिकों की डिजिटल जरूरतों को समयबद्ध रूप से पूरा करने के लिए समर्पित।
+        </p>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-item">
+          <span class="info-label">ऑफिस पता</span>
+          <span class="info-val">मुख्य बाजार मार्ग, औरैया, उत्तर प्रदेश</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">संपर्क सुविधा</span>
+          <span class="info-val">सोमवार से शनिवार (सुबह 9:00 से शाम 7:00)</span>
+        </div>
+      </div>
+
+      <div class="action-row">
+        <!-- Google Business Profile Link -->
+        <a 
+          href="https://maps.google.com/?q=Auraiya+Digital+Services+Auraiya" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          class="btn-primary"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          गूगल बिजनेस प्रोफाइल देखें
+        </a>
+
+        <!-- Direct Contact Link -->
+        <a 
+          href="tel:+91XXXXXXXXXX" 
+          class="btn-secondary"
+          id="direct-call-btn"
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          सीधा संपर्क करें
+        </a>
+      </div>
+
+      <!-- Trust Note for Reviews -->
+      <div class="verification-note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="8" x2="12" y2="12"></line>
+          <line x1="12" y1="16" x2="12.01" y2="16"></line>
+        </svg>
+        <span>सभी समीक्षाएं और रेटिंग्स सीधे हमारे आधिकारिक गूगल बिजनेस प्रोफाइल पर वास्तविक ग्राहकों द्वारा सत्यापित हैं।</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Auraiya Digital Services — Section 10: Resources & Guides -->
+<section class="resources" id="resources" aria-labelledby="resourcesTitle">
+  <div class="resources__inner">
+
+    <header class="resources__head">
+      <h2 class="resources__title" id="resourcesTitle">सीखें, समझें और बेहतर डिजिटल निर्णय लें।</h2>
+      <p class="resources__text">वेबसाइट, SEO और डिजिटल सेवाओं से संबंधित उपयोगी जानकारी।</p>
+
+      <nav class="resources__cats" aria-label="लेख श्रेणियां">
+        <a href="/resources/website-guides">Website Guides</a>
+        <a href="/resources/seo-guides">SEO Guides</a>
+        <a href="/resources/business-guides">Business Guides</a>
+      </nav>
+    </header>
+
+    <div class="resources__grid">
+
+      <!-- Featured article -->
+      <article class="article article--featured">
+        <div class="article__media">
+          <svg class="article__art" viewBox="0 0 640 400" preserveAspectRatio="xMidYMid slice" role="img"
+               aria-label="वेबसाइट बनवाने की चेकलिस्ट का चित्र: बाईं ओर टिक वाली सूची और दाईं ओर नीले रंग की वेबसाइट का नमूना"
+               xmlns="http://www.w3.org/2000/svg">
+            <rect width="640" height="400" fill="#EAF1FF"/>
+            <circle cx="560" cy="60" r="90" fill="#176BFF" fill-opacity=".08"/>
+            <g class="article__layer">
+              <rect x="48" y="52" width="250" height="296" rx="20" fill="#fff" stroke="#D5DFF3"/>
+              <rect x="72" y="80" width="110" height="12" rx="6" fill="#111827"/>
+              <g fill="#176BFF"><circle cx="90" cy="130" r="12"/><circle cx="90" cy="176" r="12"/><circle cx="90" cy="222" r="12"/><circle cx="90" cy="268" r="12" fill="#FF3D9A"/></g>
+              <g fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m84 130 4 4 8-8"/><path d="m84 176 4 4 8-8"/><path d="m84 222 4 4 8-8"/></g>
+              <circle cx="90" cy="268" r="4" fill="#fff"/>
+              <rect x="116" y="123" width="140" height="8" rx="4" fill="#111827" fill-opacity=".55"/><rect x="116" y="137" width="96" height="6" rx="3" fill="#111827" fill-opacity=".2"/>
+              <rect x="116" y="169" width="130" height="8" rx="4" fill="#111827" fill-opacity=".55"/><rect x="116" y="183" width="84" height="6" rx="3" fill="#111827" fill-opacity=".2"/>
+              <rect x="116" y="215" width="146" height="8" rx="4" fill="#111827" fill-opacity=".55"/><rect x="116" y="229" width="104" height="6" rx="3" fill="#111827" fill-opacity=".2"/>
+              <rect x="116" y="261" width="120" height="8" rx="4" fill="#111827" fill-opacity=".55"/><rect x="116" y="275" width="90" height="6" rx="3" fill="#111827" fill-opacity=".2"/>
+              <rect x="72" y="306" width="202" height="22" rx="11" fill="#EAF1FF"/>
+              <rect x="86" y="313" width="90" height="8" rx="4" fill="#176BFF" fill-opacity=".6"/>
+            </g>
+            <g class="article__layer article__layer--b">
+              <rect x="268" y="96" width="324" height="236" rx="18" fill="#fff" stroke="#D5DFF3"/>
+              <circle cx="290" cy="116" r="4" fill="#FF3D9A"/><circle cx="304" cy="116" r="4" fill="#D1D5DB"/><circle cx="318" cy="116" r="4" fill="#D1D5DB"/>
+              <rect x="340" y="109" width="150" height="14" rx="7" fill="#F1F3F6"/>
+              <rect x="288" y="140" width="284" height="104" rx="12" fill="#0B0F14"/>
+              <rect x="306" y="162" width="130" height="14" rx="7" fill="#fff"/><rect x="306" y="184" width="100" height="8" rx="4" fill="#fff" fill-opacity=".5"/>
+              <rect x="306" y="206" width="70" height="20" rx="10" fill="#176BFF"/>
+              <circle cx="508" cy="192" r="26" fill="#176BFF"/><circle cx="528" cy="172" r="10" fill="#FF3D9A"/>
+              <rect x="288" y="260" width="88" height="52" rx="10" fill="#EAF1FF"/><rect x="392" y="260" width="88" height="52" rx="10" fill="#EAF1FF"/><rect x="496" y="260" width="76" height="52" rx="10" fill="#EAF1FF"/>
+            </g>
+          </svg>
+        </div>
+        <div class="article__body">
+          <p class="article__cat">Website Guides</p>
+          <h3 class="article__title">अपने बिजनेस के लिए वेबसाइट बनवाने से पहले जानने योग्य जरूरी बातें</h3>
+          <p class="article__text">डोमेन, होस्टिंग, डिजाइन और खर्च — वेबसाइट बनवाने से पहले क्या तय करना चाहिए, आसान भाषा में।</p>
+          <a class="article__link" href="/resources/website-guides/website-banwane-se-pehle">
+            लेख पढ़ें<span class="visually-hidden">: अपने बिजनेस के लिए वेबसाइट बनवाने से पहले जानने योग्य जरूरी बातें</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Compact articles -->
+      <div class="resources__list">
+
+        <article class="article">
+          <div class="article__media">
+          <svg class="article__art" viewBox="0 0 160 120" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Local SEO का चित्र: नक्शे पर लोकेशन पिन और खोज का आवर्धक शीशा" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="120" fill="#EAF1FF"/>
+            <g class="article__layer">
+              <rect x="22" y="24" width="116" height="74" rx="12" fill="#fff" stroke="#D5DFF3"/>
+              <path d="M22 70c20-14 34 8 56-6s42-4 60-14" fill="none" stroke="#D5DFF3" stroke-width="3"/>
+              <path d="M70 34c-9 0-16 7-16 16 0 12 16 26 16 26s16-14 16-26c0-9-7-16-16-16Z" fill="#176BFF"/><circle cx="70" cy="50" r="6" fill="#fff"/>
+              <circle cx="108" cy="64" r="15" fill="#fff" stroke="#FF3D9A" stroke-width="4"/><path d="m119 75 11 11" stroke="#FF3D9A" stroke-width="5" stroke-linecap="round"/>
+            </g>
+          </svg>
+          </div>
+          <div class="article__body">
+            <p class="article__cat">SEO Guides</p>
+            <h3 class="article__title">Local SEO क्या है और दुकानदारों के लिए क्यों जरूरी है</h3>
+            <p class="article__text">अपने शहर में ग्राहक आपको गूगल पर कैसे ढूंढते हैं, और आप ऊपर कैसे आ सकते हैं।</p>
+            <a class="article__link" href="/resources/seo-guides/local-seo-kya-hai">
+              लेख पढ़ें<span class="visually-hidden">: Local SEO क्या है और दुकानदारों के लिए क्यों जरूरी है</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="article">
+          <div class="article__media">
+          <svg class="article__art" viewBox="0 0 160 120" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Google Business Profile का चित्र: दुकान का कार्ड, जिस पर तारों वाली रेटिंग है" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="120" fill="#F3F0FF"/>
+            <g class="article__layer">
+              <rect x="26" y="22" width="108" height="78" rx="12" fill="#fff" stroke="#DDD8F5"/>
+              <path d="M26 44h108" stroke="#DDD8F5"/>
+              <path d="M36 44v-8c0-5 4-9 9-9h70c5 0 9 4 9 9v8" fill="none" stroke="#176BFF" stroke-width="5" stroke-linecap="round"/>
+              <rect x="38" y="56" width="62" height="8" rx="4" fill="#111827" fill-opacity=".55"/>
+              <g fill="#FF3D9A"><path d="m42 78 2.6 5.2 5.8.8-4.2 4 1 5.7-5.2-2.8-5.2 2.8 1-5.7-4.2-4 5.8-.8z" transform="translate(-2 -6) scale(.9)"/><path d="m64 78 2.6 5.2 5.8.8-4.2 4 1 5.7-5.2-2.8-5.2 2.8 1-5.7-4.2-4 5.8-.8z" transform="translate(-2 -6) scale(.9)"/><path d="m86 78 2.6 5.2 5.8.8-4.2 4 1 5.7-5.2-2.8-5.2 2.8 1-5.7-4.2-4 5.8-.8z" transform="translate(-2 -6) scale(.9)"/></g>
+              <rect x="108" y="72" width="16" height="16" rx="8" fill="#176BFF"/>
+            </g>
+          </svg>
+          </div>
+          <div class="article__body">
+            <p class="article__cat">SEO Guides</p>
+            <h3 class="article__title">Google Business Profile कैसे बनाएं</h3>
+            <p class="article__text">गूगल मैप्स पर अपनी दुकान जोड़ने और जानकारी सही रखने के आसान कदम।</p>
+            <a class="article__link" href="/resources/seo-guides/google-business-profile">
+              लेख पढ़ें<span class="visually-hidden">: Google Business Profile कैसे बनाएं</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="article">
+          <div class="article__media">
+          <svg class="article__art" viewBox="0 0 160 120" preserveAspectRatio="xMidYMid slice" role="img" aria-label="डिजिटल पेमेंट का चित्र: मोबाइल पर QR कोड" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="120" fill="#E9F4EC"/>
+            <g class="article__layer">
+              <rect x="52" y="14" width="56" height="96" rx="12" fill="#fff" stroke="#C9E3D1" stroke-width="1.5"/>
+              <rect x="72" y="19" width="16" height="3" rx="1.5" fill="#C9E3D1"/>
+              <g fill="#111827"><rect x="64" y="32" width="14" height="14" rx="2"/><rect x="82" y="32" width="14" height="14" rx="2"/><rect x="64" y="50" width="14" height="14" rx="2"/><rect x="85" y="53" width="6" height="6"/><rect x="93" y="61" width="4" height="4"/><rect x="81" y="63" width="5" height="5"/></g>
+              <rect x="67" y="35" width="8" height="8" rx="1" fill="#fff"/><rect x="85" y="35" width="8" height="8" rx="1" fill="#fff"/><rect x="67" y="53" width="8" height="8" rx="1" fill="#fff"/>
+              <rect x="64" y="76" width="32" height="8" rx="4" fill="#176BFF"/>
+              <circle cx="96" cy="94" r="5" fill="#FF3D9A"/>
+            </g>
+          </svg>
+          </div>
+          <div class="article__body">
+            <p class="article__cat">Business Guides</p>
+            <h3 class="article__title">छोटे व्यवसाय के लिए डिजिटल पेमेंट और QR सेटअप</h3>
+            <p class="article__text">UPI QR और डिजिटल भुगतान शुरू करते समय किन बातों का ध्यान रखें।</p>
+            <a class="article__link" href="/resources/business-guides/digital-payment-qr">
+              लेख पढ़ें<span class="visually-hidden">: छोटे व्यवसाय के लिए डिजिटल पेमेंट और QR सेटअप</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="article">
+          <div class="article__media">
+          <svg class="article__art" viewBox="0 0 160 120" preserveAspectRatio="xMidYMid slice" role="img" aria-label="डोमेन और होस्टिंग का चित्र: सर्वर के डिब्बे और ग्लोब" xmlns="http://www.w3.org/2000/svg">
+            <rect width="160" height="120" fill="#FFF1F7"/>
+            <g class="article__layer">
+              <rect x="24" y="28" width="82" height="26" rx="8" fill="#fff" stroke="#F3D5E3"/><rect x="24" y="62" width="82" height="26" rx="8" fill="#fff" stroke="#F3D5E3"/>
+              <circle cx="38" cy="41" r="4" fill="#176BFF"/><circle cx="38" cy="75" r="4" fill="#176BFF"/>
+              <rect x="50" y="38" width="44" height="6" rx="3" fill="#111827" fill-opacity=".35"/><rect x="50" y="72" width="44" height="6" rx="3" fill="#111827" fill-opacity=".35"/>
+              <circle cx="118" cy="60" r="22" fill="#176BFF"/>
+              <g fill="none" stroke="#fff" stroke-width="2"><ellipse cx="118" cy="60" rx="9" ry="22"/><path d="M96 60h44M101 47h34M101 73h34"/></g>
+              <circle cx="134" cy="40" r="6" fill="#FF3D9A"/>
+            </g>
+          </svg>
+          </div>
+          <div class="article__body">
+            <p class="article__cat">Website Guides</p>
+            <h3 class="article__title">डोमेन और होस्टिंग में क्या फर्क है</h3>
+            <p class="article__text">वेबसाइट का नाम और उसकी जगह — दोनों को सरल उदाहरणों से समझें।</p>
+            <a class="article__link" href="/resources/website-guides/domain-aur-hosting">
+              लेख पढ़ें<span class="visually-hidden">: डोमेन और होस्टिंग में क्या फर्क है</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Auraiya Digital Services — Section 11: FAQ -->
+<section class="faq" id="faq" aria-labelledby="faqTitle">
+  <div class="faq__inner">
+
+    <h2 class="faq__title" id="faqTitle">अक्सर पूछे जाने वाले सवाल।</h2>
+
+    <div class="faq__list" id="faqList">
+
+        <div class="faq__item is-open">
+          <h3 class="faq__heading">
+            <button class="faq__question" type="button" id="faqQ1" aria-expanded="true" aria-controls="faqA1">
+              <span>Auraiya Digital Services क्या है?</span>
+              <svg class="faq__icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="faq__panel" id="faqA1">
+            <div class="faq__panel-inner">
+              <p class="faq__answer">Auraiya Digital Services औरैया, उत्तर प्रदेश की एक स्थानीय डिजिटल सेवा संस्था है। यहां सरकारी ऑनलाइन सेवाओं से लेकर बिजनेस वेबसाइट, ग्राफिक डिजाइन और डिजिटल पहचान तक की सेवाएं एक ही जगह मिलती हैं।</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <h3 class="faq__heading">
+            <button class="faq__question" type="button" id="faqQ2" aria-expanded="false" aria-controls="faqA2">
+              <span>कौन-कौन सी सेवाएं उपलब्ध हैं?</span>
+              <svg class="faq__icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="faq__panel" id="faqA2">
+            <div class="faq__panel-inner">
+              <p class="faq__answer">Jan Seva Kendra के तहत सरकारी ऑनलाइन सेवाएं, फॉर्म, प्रमाणपत्र और दस्तावेज सहायता मिलती है। इसके अलावा दुकानदारों और व्यवसायों के लिए डिजिटल समाधान, वेबसाइट डेवलपमेंट, ग्राफिक डिजाइन, टाइपिंग, Google Business Profile, SEO और Website Maintenance उपलब्ध हैं।</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <h3 class="faq__heading">
+            <button class="faq__question" type="button" id="faqQ3" aria-expanded="false" aria-controls="faqA3">
+              <span>वेबसाइट बनवाने में कितना खर्च आता है?</span>
+              <svg class="faq__icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="faq__panel" id="faqA3">
+            <div class="faq__panel-inner">
+              <p class="faq__answer">खर्च आपकी जरूरत पर निर्भर करता है, जैसे पेजों की संख्या, डिजाइन, ऑनलाइन दुकान या दूसरी सुविधाएं। अपनी जरूरत बताइए, काम शुरू करने से पहले हम आपको स्पष्ट अनुमान दे देंगे।</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <h3 class="faq__heading">
+            <button class="faq__question" type="button" id="faqQ4" aria-expanded="false" aria-controls="faqA4">
+              <span>वेबसाइट बनाने में कितना समय लगता है?</span>
+              <svg class="faq__icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="faq__panel" id="faqA4">
+            <div class="faq__panel-inner">
+              <p class="faq__answer">समय वेबसाइट के आकार, पेजों की संख्या और आपकी ओर से जानकारी व फोटो मिलने की गति पर निर्भर करता है। शुरू करने से पहले हम अनुमानित समय बता देते हैं।</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <h3 class="faq__heading">
+            <button class="faq__question" type="button" id="faqQ5" aria-expanded="false" aria-controls="faqA5">
+              <span>क्या Website Maintenance उपलब्ध है?</span>
+              <svg class="faq__icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="faq__panel" id="faqA5">
+            <div class="faq__panel-inner">
+              <p class="faq__answer">हां। वेबसाइट बनने के बाद अपडेट, सुरक्षा और छोटे बदलावों के लिए Website Maintenance सेवा उपलब्ध है, ताकि आपकी वेबसाइट हमेशा चालू और ताज़ा रहे।</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <h3 class="faq__heading">
+            <button class="faq__question" type="button" id="faqQ6" aria-expanded="false" aria-controls="faqA6">
+              <span>क्या Online Forms में सहायता मिलती है?</span>
+              <svg class="faq__icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="faq__panel" id="faqA6">
+            <div class="faq__panel-inner">
+              <p class="faq__answer">हां। नौकरी, परीक्षा, प्रवेश, छात्रवृत्ति और सरकारी योजनाओं के ऑनलाइन फॉर्म भरने और दस्तावेज अपलोड करने में सहायता मिलती है।</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <h3 class="faq__heading">
+            <button class="faq__question" type="button" id="faqQ7" aria-expanded="false" aria-controls="faqA7">
+              <span>सरकारी सेवाओं में आवेदन की प्रक्रिया क्या है?</span>
+              <svg class="faq__icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="faq__panel" id="faqA7">
+            <div class="faq__panel-inner">
+              <p class="faq__answer">आमतौर पर आप अपनी जरूरत बताते हैं, हम उस सेवा के लिए आवश्यक दस्तावेजों की जानकारी देते हैं, फिर आवेदन भरकर जमा किया जाता है। जरूरी दस्तावेज सेवा के अनुसार अलग-अलग होते हैं। अधिक जानकारी के लिए <a href="/jan-seva-kendra">Jan Seva Kendra पेज</a> देखें।</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item">
+          <h3 class="faq__heading">
+            <button class="faq__question" type="button" id="faqQ8" aria-expanded="false" aria-controls="faqA8">
+              <span>संपर्क कैसे करें?</span>
+              <svg class="faq__icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </h3>
+          <div class="faq__panel" id="faqA8">
+            <div class="faq__panel-inner">
+              <p class="faq__answer">आप <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">WhatsApp पर संदेश</a> भेज सकते हैं या <a href="/contact">संपर्क पेज</a> के माध्यम से हमसे जुड़ सकते हैं।</p>
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Auraiya Digital Services — Section 13: Footer -->
+<footer class="site-footer" id="siteFooter">
+  <div class="site-footer__inner">
+
+    <div class="site-footer__grid">
+
+      <!-- 1. Brand -->
+      <div class="site-footer__brand">
+        <a class="site-footer__logo" href="/" aria-label="Auraiya Digital Services, home">
+          <span class="site-footer__mark" aria-hidden="true">A</span>
+          <span class="site-footer__name">Auraiya Digital Services</span>
+        </a>
+        <p class="site-footer__tagline">Your Local Digital Service &amp; Business Growth Hub</p>
+        <p class="site-footer__about">औरैया की स्थानीय डिजिटल सेवा संस्था — सरकारी ऑनलाइन सेवाओं से लेकर बिजनेस वेबसाइट, ग्राफिक डिजाइन और डिजिटल पहचान तक, सब एक ही जगह।</p>
+        <p class="site-footer__place">Auraiya, Uttar Pradesh</p>
+      </div>
+
+      <!-- 2. Digital Services -->
+      <nav class="site-footer__col" aria-labelledby="footDigital">
+        <h2 class="site-footer__title" id="footDigital">Digital Services</h2>
+        <ul class="site-footer__list">
+          <li><a href="/jan-seva-kendra/online-forms">Online Form Filling</a></li>
+          <li><a href="/creative-digital">Hindi &amp; English Typing</a></li>
+          <li><a href="/creative-digital">Graphic Design</a></li>
+          <li><a href="/website-design">Website Development</a></li>
+          <li><a href="/services/google-business-profile">Google Business Profile</a></li>
+        </ul>
+      </nav>
+
+      <!-- 3. Jan Seva Kendra -->
+      <nav class="site-footer__col" aria-labelledby="footJanSeva">
+        <h2 class="site-footer__title" id="footJanSeva">Jan Seva Kendra</h2>
+        <ul class="site-footer__list">
+          <li><a href="/jan-seva-kendra/online-forms">Online Forms</a></li>
+          <li><a href="/jan-seva-kendra/aadhaar-pan">Aadhaar Services</a></li>
+          <li><a href="/jan-seva-kendra/certificates">Ration Card</a></li>
+          <li><a href="/jan-seva-kendra/aadhaar-pan">PAN Card</a></li>
+          <li><a href="/jan-seva-kendra/certificates">Voter Services</a></li>
+          <li><a href="/jan-seva-kendra/government-schemes">Government Schemes</a></li>
+          <li><a href="/jan-seva-kendra/documents">Document Services</a></li>
+        </ul>
+      </nav>
+
+      <!-- 4. Website & Business -->
+      <nav class="site-footer__col" aria-labelledby="footBusiness">
+        <h2 class="site-footer__title" id="footBusiness">Website &amp; Business</h2>
+        <ul class="site-footer__list">
+          <li><a href="/website-design">Website Design</a></li>
+          <li><a href="/pricing">Pricing</a></li>
+          <li><a href="/website-demos">Website Demos</a></li>
+          <li><a href="/portfolio">Portfolio</a></li>
+          <li><a href="/case-studies">Case Studies</a></li>
+          <li><a href="/resources">Resources</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </nav>
+
+      <!-- 5. Contact -->
+      <div class="site-footer__col site-footer__col--contact">
+        <h2 class="site-footer__title" id="footContact">Contact</h2>
+        <address class="site-footer__address" aria-labelledby="footContact">
+          <ul class="site-footer__list">
+            <li><a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="tel:+91XXXXXXXXXX">Phone: +91 XXXXX XXXXX</a></li>
+            <li><a href="mailto:info@example.com">Email: info@example.com</a></li>
+            <li class="site-footer__item"><span class="site-footer__label">Office Address</span>[पूरा पता यहां जोड़ें], Auraiya, Uttar Pradesh</li>
+            <li class="site-footer__item"><span class="site-footer__label">Working Hours</span>[अपना कार्य समय यहां लिखें]</li>
+            <li><a href="https://g.page/XXXXXXXX" target="_blank" rel="noopener">Google Business Profile</a></li>
+          </ul>
+        </address>
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="site-footer__bottom">
+      <p class="site-footer__copy">© <span id="footerYear">2026</span> Auraiya Digital Services. सर्वाधिकार सुरक्षित।</p>
+
+      <nav class="site-footer__legal" aria-label="Legal">
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+        <a href="/disclaimer">Disclaimer</a>
+      </nav>
+
+      <p class="site-footer__credit">Designed &amp; built in Auraiya by Auraiya Digital Services</p>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
